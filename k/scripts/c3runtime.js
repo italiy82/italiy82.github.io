@@ -3808,6 +3808,12 @@ bbox.getBottom();this._isEnabled=true;this._StartTicking()}}}};
 		C3.Behaviors.Anchor,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Audio.Acts.Play,
+		C3.Plugins.VKBridge.Acts.BridgeConnect,
+		C3.Plugins.VKBridge.Acts.AppGetClient,
+		C3.Plugins.LocalStorage.Acts.CheckItemExists,
+		C3.Plugins.VKBridge.Cnds.AppGetClientSuccess,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.VKBridge.Exps.ClientPlatform,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.Sprite.Acts.SetVisible,
@@ -3817,25 +3823,19 @@ bbox.getBottom();this._isEnabled=true;this._StartTicking()}}}};
 		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.VKBridge.Cnds.AdsMobileSuccess,
+		C3.Plugins.VKBridge.Cnds.ShowAdsSuccess,
 		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.LocalStorage.Acts.SetItem,
-		C3.Plugins.VKBridge.Cnds.ShowAdsSuccess,
 		C3.Plugins.VKBridge.Cnds.AdsMobileFailed,
 		C3.Plugins.VKBridge.Cnds.ShowAdsFailed,
 		C3.Plugins.System.Acts.GoToLayoutByName,
 		C3.Plugins.Sprite.Cnds.IsMirrored,
 		C3.Plugins.Sprite.Cnds.IsVisible,
-		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.VKBridge.Acts.AdsMobile,
 		C3.Plugins.LocalStorage.Cnds.OnItemExists,
 		C3.Plugins.LocalStorage.Exps.ItemValue,
-		C3.Plugins.VKBridge.Acts.BridgeConnect,
-		C3.Plugins.VKBridge.Acts.AppGetClient,
-		C3.Plugins.LocalStorage.Acts.CheckItemExists,
-		C3.Plugins.VKBridge.Cnds.AppGetClientSuccess,
-		C3.Plugins.VKBridge.Exps.ClientPlatform,
 		C3.Plugins.System.Acts.NextPrevLayout
 		];
 	};
@@ -4024,6 +4024,7 @@ bbox.getBottom();this._isEnabled=true;this._StartTicking()}}}};
 		{Спрайт150: 0},
 		{Спрайт151: 0},
 		{Спрайт152: 0},
+		{рекламма: 0},
 		{Объявления: 0},
 		{Платформы: 0},
 		{загрузка: 0}
@@ -4130,19 +4131,19 @@ bbox.getBottom();this._isEnabled=true;this._StartTicking()}}}};
 	self.C3_ExpressionFuncs = [
 		() => 0,
 		() => "",
-		() => "объявление",
-		() => "игра",
-		() => "финиш",
-		() => 1,
-		() => "мобильный Интернет",
-		() => "паутина",
-		() => "андроид",
-		() => "iOS",
 		() => "объявления",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0();
-		}
+		},
+		() => "объявление",
+		() => "игра",
+		() => "финиш",
+		() => "мобильный Интернет",
+		() => "паутина",
+		() => "андроид",
+		() => "iOS",
+		() => 1
 	];
 }
 
