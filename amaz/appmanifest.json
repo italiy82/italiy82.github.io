@@ -1,0 +1,10 @@
+{
+	"name": "Приключения Амазонки",
+	"short_name": "Приключения Амазонки",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}
