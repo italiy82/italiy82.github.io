@@ -1,0 +1,10 @@
+{
+	"name": "тыква",
+	"short_name": "тыква",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": []
+}
